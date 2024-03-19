@@ -9,10 +9,11 @@ connection = sqlite3.connect("restaurant_reviews.db")
 cursor = connection.cursor()
 
 # Create tables
-create_tables(cursor)
+create_tables()
 
 # Insert sample data
-insert_sample_data(cursor)
+insert_sample_data()
+
 
 # Test your methods here
 # For example:
@@ -20,7 +21,7 @@ restaurant_a = Restaurant("Restaurant A", 3)
 print("Reviews for Restaurant A:", restaurant_a.reviews(cursor))
 
 customer_john = Customer("John", "Doe")
-print("Reviews by John:", customer_john.reviews(cursor))
+print("Reviews by John:", customer_john.reviews())
 
 review = Review(restaurant_a, customer_john, 5)
 print("Full Review:", review.full_review())
