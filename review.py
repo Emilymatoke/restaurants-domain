@@ -1,3 +1,4 @@
+
 class Review:
     def __init__(self, restaurant, customer, star_rating):
         self.restaurant = restaurant

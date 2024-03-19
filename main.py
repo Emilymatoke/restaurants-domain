@@ -18,7 +18,7 @@ insert_sample_data()
 # Test your methods here
 # For example:
 restaurant_a = Restaurant("Restaurant A", 3)
-print("Reviews for Restaurant A:", restaurant_a.reviews(cursor))
+print("Reviews for Restaurant A:", restaurant_a.reviews( cursor))
 
 customer_john = Customer("John", "Doe")
 print("Reviews by John:", customer_john.reviews())
